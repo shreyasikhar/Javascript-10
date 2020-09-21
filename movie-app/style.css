@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #22254b;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #373b69;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header h2 {
+    margin: 0;
+    margin-left: 2rem;
+    color: #fff;
+}
+
+@media only screen and (max-width: 500px) { 
+    header h2 {
+        display: none;
+    }
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: #eee;
+    padding: 0.8rem 1rem;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid #22254b;
+}
+
+.search::placeholder {
+    color: #989feb;
+}
+
+.search:focus {
+    background-color: #22254b;
+    outline: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);  
+    width: 250px;
+    margin: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    color: #dddddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 1px;
+}
+.movie-info h3 {
+    margin: 0;
+}
+.movie-info span {
+    background-color: #22254b;
+    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
+    font-weight: bold;
+}
+.movie-info span.green {
+    color: rgb(39, 223, 39);
+}
+.movie-info span.orange {
+    color: orange;
+}
+.movie-info span.red {
+    color: rgb(255, 0, 0);
+}
+
+.overview {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100%;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
+}
+
+.overview h3 {
+    margin-top: 0;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}

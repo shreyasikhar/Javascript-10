@@ -1,5 +1,5 @@
 # Javascript-10
-Javascript projects using vanilla js, html, css
+10 Different Javascript Projects using Vanilla JS, HTML, CSS
 
 ![alt text](https://github.com/shreyasikhar/Javascript-10/blob/master/landingPage.png)
 
